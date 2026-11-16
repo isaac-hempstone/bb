@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  min-height: 100vh;
+  background: #101820;
+  color: white;
+  padding: 30px 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.hero nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-content {
+  margin: auto 0;
+  max-width: 650px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #16a085;
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 15px;
+}
+.btn:hover {
+  background: #3e10bd;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgb(16 24 32 / 8%);
+}
+
+.lesson-page {
+  min-height: 100vh;
+  background: #a1a7a6e7;
+  color: #101820;
+  padding: 30px 8%;
+}
+
+.lesson-page nav {
+  margin-bottom: 48px;
+}
+
+.lesson-page nav a {
+  color: #101820;
+  text-decoration: none;
+}
+
+.lesson-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.lesson-content h1 {
+  margin-bottom: 24px;
+  font-size: 48px;
+}
+
+.lesson-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.cards {
+  padding: 24px;
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgb(16 24 32 / 8%);
+}
+
+.cards h2 {
+  margin-bottom: 12px;
+  color: green;
+}
+
+.cards p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.cards pre {
+  overflow-x: auto;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 6px;
+  background: #ff06ac;
+  color: #0c0c0c;
+  line-height: 1.6;
+}
+
+.cards code {
+  font-family: monospace;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 24px 6%;
+  }
+
+  .lesson-page {
+    padding: 24px 6%;
+  }
+
+  nav {
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+
+  .lesson-page nav {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .lesson-content h1 {
+    font-size: 38px;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+table th {
+  background-color: #f2f2f2;
+}
+video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}

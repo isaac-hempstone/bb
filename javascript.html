@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hr.css" />
+    <title>JavaScript | Web Development</title>
+  </head>
+  <body class="lesson-page">
+    <nav aria-label="Main navigation">
+      <a href="h1.html">Web Development</a>
+      <div class="nav-links">
+        <a href="h1.html">Home</a>
+        <a href="hyper.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+      </div>
+    </nav>
+    <main class="lesson-content">
+      <h1>JavaScript</h1>
+      <div class="lesson-cards">
+        <section class="cards">
+          <h2>What is JavaScript?</h2>
+          <p>
+            JavaScript is a programming language that can make web pages
+            interactive. It can respond to clicks, update page content, and work
+            with data. HTML provides structure, CSS controls appearance, and
+            JavaScript adds behavior.
+          </p>
+        </section>
+        <section class="cards">
+          <h2>Variables</h2>
+          <p>
+            Variables give names to values. Use <code>const</code> when you do
+            not need to reassign a variable, and <code>let</code> when its value
+            will change.
+          </p>
+          <pre><code>const topic = "JavaScript";
+let lessonsCompleted = 0;
+
+lessonsCompleted = lessonsCompleted + 1;</code></pre>
+        </section>
+        <section class="cards">
+          <h2>Functions</h2>
+          <p>
+            A function is a reusable block of code. You can give it input
+            values, called parameters, and have it return a result.
+          </p>
+          <pre><code>function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+console.log(greet("Alex"));</code></pre>
+        </section>
+        <section class="cards">
+          <h2>Responding to a click</h2>
+          <p>
+            JavaScript can listen for events, such as a button click, and run
+            code in response. This example updates text on the page:
+          </p>
+          <pre><code>const button = document.querySelector("button");
+
+button.addEventListener("click", function () {
+  document.querySelector("p").textContent = "You clicked the button!";
+});</code></pre>
+        </section>
+        <section class="cards">
+          <h2>Adding JavaScript to a page</h2>
+          <p>
+            JavaScript can be placed in a separate file and connected near the
+            end of the HTML <code>&lt;body&gt;</code>:
+          </p>
+          <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+          <p>
+            The <code>src</code> value should match the path and name of your
+            JavaScript file.
+          </p>
+        </section>
+        <section class="cards">
+          <h2>JavaScript Libraries</h2>
+          <p>
+            JavaScript libraries are collections of pre-written code that make
+            it easier to perform common tasks. Popular libraries include jQuery,
+            React, and Lodash.
+          </p>
+        </section>
+        <section class="cards">
+          <h2>JavaScript Frameworks</h2>
+          <p>
+            JavaScript frameworks provide a structured way to build web
+            applications. They often include tools for routing, state
+            management, and building user interfaces. Popular frameworks include
+            Angular, Vue, and Ember.
+          </p>
+        </section>
+        <section class="cards">
+          <h2>JavaScript and the DOM</h2>
+          <p>
+            The Document Object Model (DOM) is a representation of the HTML
+            structure of a web page. JavaScript can manipulate the DOM to change
+            the content, structure, and style of a page dynamically.
+          </p>
+        </section>
+        <section class="cards">
+          <h2>JavaScript and APIs</h2>
+          <p>
+            JavaScript can interact with APIs (Application Programming
+            Interfaces) to fetch data from servers and display it on web pages.
+            This allows developers to create dynamic and interactive web
+            applications that can communicate with external services.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

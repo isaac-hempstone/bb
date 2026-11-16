@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hr.css" />
+    <title>CSS | Web Development</title>
+  </head>
+  <body class="lesson-page">
+    <nav aria-label="Main navigation">
+      <a href="h1.html">Web Development</a>
+      <div class="nav-links">
+        <a href="h1.html">Home</a>
+        <a href="hyper.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+      </div>
+    </nav>
+    <main class="lesson-content">
+      <h1>CSS</h1>
+      <div class="lesson-cards">
+        <section class="cards">
+          <h2>What is CSS?</h2>
+          <p>
+            CSS (Cascading Style Sheets) controls how HTML content looks. It
+            lets you set colors, fonts, spacing, borders, and page layouts. HTML
+            provides the structure; CSS styles that structure.
+          </p>
+        </section>
+        <section class="cards">
+          <h2>CSS rules</h2>
+          <p>
+            A CSS rule has a selector, which chooses an HTML element, and
+            declarations, which set its styles. Each declaration has a property
+            and a value.
+          </p>
+          <pre><code>h1 {
+  color: teal;
+  font-size: 2rem;
+}</code></pre>
+          <p>
+            In this example, <code>h1</code> is the selector,
+            <code>color</code> and <code>font-size</code> are properties, and
+            <code>teal</code> and <code>2rem</code> are their values.
+          </p>
+        </section>
+        <section class="cards">
+          <h2>Common selectors</h2>
+          <p>
+            A type selector such as <code>p</code> selects all paragraphs. A
+            class selector such as <code>.card</code> selects elements with
+            <code>class="card"</code>. An ID selector such as
+            <code>#header</code> selects the element with
+            <code>id="header"</code>.
+          </p>
+        </section>
+        <section class="cards">
+          <h2>Adding CSS to a page</h2>
+          <p>
+            This website uses an external stylesheet. The link belongs inside
+            the HTML <code>&lt;head&gt;</code>:
+          </p>
+          <pre><code>&lt;link rel="stylesheet" href="hr.css"&gt;</code></pre>
+          <p>
+            Keeping styles in a separate CSS file makes them easier to reuse and
+            maintain across pages.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
